@@ -1,0 +1,12 @@
+import mill._, scalalib._
+
+object playground extends ScalaModule {
+  def scalaVersion = "2.13.11"
+  def sources = Task.Sources {
+    super.sources() ++ Seq(PathRef(millSourcePath / "foo"))
+  }
+  def ivyDeps = Agg(
+    ivy"com.lihaoyi::mainargs:0.2.3"
+  )
+}
+

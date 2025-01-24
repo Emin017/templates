@@ -7,4 +7,8 @@
 		path = ./scala;
 		description = "Basic scala project setup";
 	};
+  "ocaml" = {
+    path = ./ocaml;
+    description = "Basic ocaml project setup";
+  };
 }

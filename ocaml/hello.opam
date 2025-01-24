@@ -1,0 +1,13 @@
+opam-version: "2.0"
+name: "hello"
+version: "0.1.0"
+description: "A simple hello world program"
+maintainer: ["Name"]
+authors: ["Name"]
+depends: [
+  "ocaml"
+  "dune" {>= "3.0"}
+]
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]

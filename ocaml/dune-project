@@ -1,0 +1,15 @@
+(lang dune 3.0)
+(name "hello")
+
+(authors "name")
+
+(maintainers "name")
+
+(package
+ (name hello)
+ (depends
+   ocaml dune core
+   ocaml-lsp-server
+   ocamlformat)
+ (tags
+  (topics "hello")))

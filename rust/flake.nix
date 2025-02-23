@@ -41,8 +41,8 @@
       in
       {
         packages = {
-          rust-playground = pkgs.callPackage ./nix/pkgs/rust-plaground.nix { };
-          default = self.packages.${system}.bot;
+          rust-playground = pkgs.callPackage ./nix/pkgs/rust-playground.nix { };
+          default = self.packages.${system}.rust-playground;
         };
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [ pkg-config ];

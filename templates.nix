@@ -11,4 +11,8 @@
     path = ./ocaml;
     description = "Basic ocaml project setup";
   };
+  "rvc" = {
+    path = ./riscv;
+    description = "RISCV project setup";
+  };
 }
